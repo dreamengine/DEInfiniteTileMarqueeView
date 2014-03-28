@@ -1,0 +1,11 @@
+xcuserdata
+
+Build
+DerivedData
+
+.sass-cache
+
+.DS_Store
+Pods
+Podfile.lock
+*.xcworkspace

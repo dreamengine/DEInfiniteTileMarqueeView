@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FB6B89818E4FD0B00F37C92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB6B89718E4FD0B00F37C92 /* Foundation.framework */; };
+		3FB6B89A18E4FD0B00F37C92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB6B89918E4FD0B00F37C92 /* CoreGraphics.framework */; };
+		3FB6B89C18E4FD0B00F37C92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB6B89B18E4FD0B00F37C92 /* UIKit.framework */; };
+		3FB6B8A218E4FD0B00F37C92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FB6B8A018E4FD0B00F37C92 /* InfoPlist.strings */; };
+		3FB6B8A418E4FD0B00F37C92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6B8A318E4FD0B00F37C92 /* main.m */; };
+		3FB6B8A818E4FD0B00F37C92 /* DEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6B8A718E4FD0B00F37C92 /* DEAppDelegate.m */; };
+		3FB6B8AA18E4FD0B00F37C92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB6B8A918E4FD0B00F37C92 /* Images.xcassets */; };
+		3FB6B8B118E4FD0C00F37C92 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB6B8B018E4FD0C00F37C92 /* XCTest.framework */; };
+		3FB6B8B218E4FD0C00F37C92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB6B89718E4FD0B00F37C92 /* Foundation.framework */; };
+		3FB6B8B318E4FD0C00F37C92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB6B89B18E4FD0B00F37C92 /* UIKit.framework */; };
+		3FB6B8BB18E4FD0C00F37C92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FB6B8B918E4FD0C00F37C92 /* InfoPlist.strings */; };
+		3FB6B8BD18E4FD0C00F37C92 /* DEInfiniteTileMarqueeView_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6B8BC18E4FD0C00F37C92 /* DEInfiniteTileMarqueeView_ExampleTests.m */; };
+		3FB6B8C918E4FD4500F37C92 /* DEInfiniteTileMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6B8C818E4FD4500F37C92 /* DEInfiniteTileMarqueeView.m */; };
+		3FB6B8CC18E4FE1300F37C92 /* triangle_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB6B8CA18E4FE1300F37C92 /* triangle_right.png */; };
+		3FB6B8CD18E4FE1300F37C92 /* triangle_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB6B8CB18E4FE1300F37C92 /* triangle_right@2x.png */; };
+		3FB6B8D118E4FE4000F37C92 /* DEMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6B8D018E4FE4000F37C92 /* DEMainController.m */; };
+		3FB6B8D418E4FEB400F37C92 /* DEMainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB6B8D318E4FEB400F37C92 /* DEMainController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FB6B8B418E4FD0C00F37C92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FB6B88C18E4FD0B00F37C92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FB6B89318E4FD0B00F37C92;
+			remoteInfo = "DEInfiniteTileMarqueeView Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FB6B89418E4FD0B00F37C92 /* DEInfiniteTileMarqueeView Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DEInfiniteTileMarqueeView Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB6B89718E4FD0B00F37C92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FB6B89918E4FD0B00F37C92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3FB6B89B18E4FD0B00F37C92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FB6B89F18E4FD0B00F37C92 /* DEInfiniteTileMarqueeView Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DEInfiniteTileMarqueeView Example-Info.plist"; sourceTree = "<group>"; };
+		3FB6B8A118E4FD0B00F37C92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FB6B8A318E4FD0B00F37C92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FB6B8A518E4FD0B00F37C92 /* DEInfiniteTileMarqueeView Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DEInfiniteTileMarqueeView Example-Prefix.pch"; sourceTree = "<group>"; };
+		3FB6B8A618E4FD0B00F37C92 /* DEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEAppDelegate.h; sourceTree = "<group>"; };
+		3FB6B8A718E4FD0B00F37C92 /* DEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEAppDelegate.m; sourceTree = "<group>"; };
+		3FB6B8A918E4FD0B00F37C92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3FB6B8AF18E4FD0C00F37C92 /* DEInfiniteTileMarqueeView ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DEInfiniteTileMarqueeView ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB6B8B018E4FD0C00F37C92 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3FB6B8B818E4FD0C00F37C92 /* DEInfiniteTileMarqueeView ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DEInfiniteTileMarqueeView ExampleTests-Info.plist"; sourceTree = "<group>"; };
+		3FB6B8BA18E4FD0C00F37C92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FB6B8BC18E4FD0C00F37C92 /* DEInfiniteTileMarqueeView_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DEInfiniteTileMarqueeView_ExampleTests.m; sourceTree = "<group>"; };
+		3FB6B8C718E4FD4500F37C92 /* DEInfiniteTileMarqueeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEInfiniteTileMarqueeView.h; sourceTree = "<group>"; };
+		3FB6B8C818E4FD4500F37C92 /* DEInfiniteTileMarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEInfiniteTileMarqueeView.m; sourceTree = "<group>"; };
+		3FB6B8CA18E4FE1300F37C92 /* triangle_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle_right.png; sourceTree = SOURCE_ROOT; };
+		3FB6B8CB18E4FE1300F37C92 /* triangle_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triangle_right@2x.png"; sourceTree = SOURCE_ROOT; };
+		3FB6B8CF18E4FE4000F37C92 /* DEMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMainController.h; sourceTree = "<group>"; };
+		3FB6B8D018E4FE4000F37C92 /* DEMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMainController.m; sourceTree = "<group>"; };
+		3FB6B8D318E4FEB400F37C92 /* DEMainController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DEMainController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FB6B89118E4FD0B00F37C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB6B89A18E4FD0B00F37C92 /* CoreGraphics.framework in Frameworks */,
+				3FB6B89C18E4FD0B00F37C92 /* UIKit.framework in Frameworks */,
+				3FB6B89818E4FD0B00F37C92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB6B8AC18E4FD0C00F37C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB6B8B118E4FD0C00F37C92 /* XCTest.framework in Frameworks */,
+				3FB6B8B318E4FD0C00F37C92 /* UIKit.framework in Frameworks */,
+				3FB6B8B218E4FD0C00F37C92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FB6B88B18E4FD0B00F37C92 = {
+			isa = PBXGroup;
+			children = (
+				3FB6B89D18E4FD0B00F37C92 /* DEInfiniteTileMarqueeView Example */,
+				3FB6B8B618E4FD0C00F37C92 /* DEInfiniteTileMarqueeView ExampleTests */,
+				3FB6B89618E4FD0B00F37C92 /* Frameworks */,
+				3FB6B89518E4FD0B00F37C92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FB6B89518E4FD0B00F37C92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FB6B89418E4FD0B00F37C92 /* DEInfiniteTileMarqueeView Example.app */,
+				3FB6B8AF18E4FD0C00F37C92 /* DEInfiniteTileMarqueeView ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FB6B89618E4FD0B00F37C92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FB6B89718E4FD0B00F37C92 /* Foundation.framework */,
+				3FB6B89918E4FD0B00F37C92 /* CoreGraphics.framework */,
+				3FB6B89B18E4FD0B00F37C92 /* UIKit.framework */,
+				3FB6B8B018E4FD0C00F37C92 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FB6B89D18E4FD0B00F37C92 /* DEInfiniteTileMarqueeView Example */ = {
+			isa = PBXGroup;
+			children = (
+				3FB6B8A618E4FD0B00F37C92 /* DEAppDelegate.h */,
+				3FB6B8A718E4FD0B00F37C92 /* DEAppDelegate.m */,
+				3FB6B8D218E4FE4300F37C92 /* Main Controller */,
+				3FB6B8C618E4FD4500F37C92 /* DEInfiniteTileMarqueeView */,
+				3FB6B8CE18E4FE2F00F37C92 /* assets */,
+				3FB6B8A918E4FD0B00F37C92 /* Images.xcassets */,
+				3FB6B89E18E4FD0B00F37C92 /* Supporting Files */,
+			);
+			path = "DEInfiniteTileMarqueeView Example";
+			sourceTree = "<group>";
+		};
+		3FB6B89E18E4FD0B00F37C92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FB6B89F18E4FD0B00F37C92 /* DEInfiniteTileMarqueeView Example-Info.plist */,
+				3FB6B8A018E4FD0B00F37C92 /* InfoPlist.strings */,
+				3FB6B8A318E4FD0B00F37C92 /* main.m */,
+				3FB6B8A518E4FD0B00F37C92 /* DEInfiniteTileMarqueeView Example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FB6B8B618E4FD0C00F37C92 /* DEInfiniteTileMarqueeView ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FB6B8BC18E4FD0C00F37C92 /* DEInfiniteTileMarqueeView_ExampleTests.m */,
+				3FB6B8B718E4FD0C00F37C92 /* Supporting Files */,
+			);
+			path = "DEInfiniteTileMarqueeView ExampleTests";
+			sourceTree = "<group>";
+		};
+		3FB6B8B718E4FD0C00F37C92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FB6B8B818E4FD0C00F37C92 /* DEInfiniteTileMarqueeView ExampleTests-Info.plist */,
+				3FB6B8B918E4FD0C00F37C92 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FB6B8C618E4FD4500F37C92 /* DEInfiniteTileMarqueeView */ = {
+			isa = PBXGroup;
+			children = (
+				3FB6B8C718E4FD4500F37C92 /* DEInfiniteTileMarqueeView.h */,
+				3FB6B8C818E4FD4500F37C92 /* DEInfiniteTileMarqueeView.m */,
+			);
+			name = DEInfiniteTileMarqueeView;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		3FB6B8CE18E4FE2F00F37C92 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				3FB6B8CA18E4FE1300F37C92 /* triangle_right.png */,
+				3FB6B8CB18E4FE1300F37C92 /* triangle_right@2x.png */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		3FB6B8D218E4FE4300F37C92 /* Main Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FB6B8CF18E4FE4000F37C92 /* DEMainController.h */,
+				3FB6B8D018E4FE4000F37C92 /* DEMainController.m */,
+				3FB6B8D318E4FEB400F37C92 /* DEMainController.xib */,
+			);
+			name = "Main Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FB6B89318E4FD0B00F37C92 /* DEInfiniteTileMarqueeView Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB6B8C018E4FD0C00F37C92 /* Build configuration list for PBXNativeTarget "DEInfiniteTileMarqueeView Example" */;
+			buildPhases = (
+				3FB6B89018E4FD0B00F37C92 /* Sources */,
+				3FB6B89118E4FD0B00F37C92 /* Frameworks */,
+				3FB6B89218E4FD0B00F37C92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DEInfiniteTileMarqueeView Example";
+			productName = "DEInfiniteTileMarqueeView Example";
+			productReference = 3FB6B89418E4FD0B00F37C92 /* DEInfiniteTileMarqueeView Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FB6B8AE18E4FD0C00F37C92 /* DEInfiniteTileMarqueeView ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB6B8C318E4FD0C00F37C92 /* Build configuration list for PBXNativeTarget "DEInfiniteTileMarqueeView ExampleTests" */;
+			buildPhases = (
+				3FB6B8AB18E4FD0C00F37C92 /* Sources */,
+				3FB6B8AC18E4FD0C00F37C92 /* Frameworks */,
+				3FB6B8AD18E4FD0C00F37C92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FB6B8B518E4FD0C00F37C92 /* PBXTargetDependency */,
+			);
+			name = "DEInfiniteTileMarqueeView ExampleTests";
+			productName = "DEInfiniteTileMarqueeView ExampleTests";
+			productReference = 3FB6B8AF18E4FD0C00F37C92 /* DEInfiniteTileMarqueeView ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FB6B88C18E4FD0B00F37C92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DE;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Dream Engine Interactive, Inc.";
+				TargetAttributes = {
+					3FB6B8AE18E4FD0C00F37C92 = {
+						TestTargetID = 3FB6B89318E4FD0B00F37C92;
+					};
+				};
+			};
+			buildConfigurationList = 3FB6B88F18E4FD0B00F37C92 /* Build configuration list for PBXProject "DEInfiniteTileMarqueeView Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3FB6B88B18E4FD0B00F37C92;
+			productRefGroup = 3FB6B89518E4FD0B00F37C92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FB6B89318E4FD0B00F37C92 /* DEInfiniteTileMarqueeView Example */,
+				3FB6B8AE18E4FD0C00F37C92 /* DEInfiniteTileMarqueeView ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FB6B89218E4FD0B00F37C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB6B8D418E4FEB400F37C92 /* DEMainController.xib in Resources */,
+				3FB6B8A218E4FD0B00F37C92 /* InfoPlist.strings in Resources */,
+				3FB6B8CD18E4FE1300F37C92 /* triangle_right@2x.png in Resources */,
+				3FB6B8AA18E4FD0B00F37C92 /* Images.xcassets in Resources */,
+				3FB6B8CC18E4FE1300F37C92 /* triangle_right.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB6B8AD18E4FD0C00F37C92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB6B8BB18E4FD0C00F37C92 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FB6B89018E4FD0B00F37C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB6B8A418E4FD0B00F37C92 /* main.m in Sources */,
+				3FB6B8A818E4FD0B00F37C92 /* DEAppDelegate.m in Sources */,
+				3FB6B8C918E4FD4500F37C92 /* DEInfiniteTileMarqueeView.m in Sources */,
+				3FB6B8D118E4FE4000F37C92 /* DEMainController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB6B8AB18E4FD0C00F37C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB6B8BD18E4FD0C00F37C92 /* DEInfiniteTileMarqueeView_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FB6B8B518E4FD0C00F37C92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FB6B89318E4FD0B00F37C92 /* DEInfiniteTileMarqueeView Example */;
+			targetProxy = 3FB6B8B418E4FD0C00F37C92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FB6B8A018E4FD0B00F37C92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FB6B8A118E4FD0B00F37C92 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FB6B8B918E4FD0C00F37C92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FB6B8BA18E4FD0C00F37C92 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FB6B8BE18E4FD0C00F37C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3FB6B8BF18E4FD0C00F37C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FB6B8C118E4FD0C00F37C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DEInfiniteTileMarqueeView Example/DEInfiniteTileMarqueeView Example-Prefix.pch";
+				INFOPLIST_FILE = "DEInfiniteTileMarqueeView Example/DEInfiniteTileMarqueeView Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FB6B8C218E4FD0C00F37C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DEInfiniteTileMarqueeView Example/DEInfiniteTileMarqueeView Example-Prefix.pch";
+				INFOPLIST_FILE = "DEInfiniteTileMarqueeView Example/DEInfiniteTileMarqueeView Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3FB6B8C418E4FD0C00F37C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DEInfiniteTileMarqueeView Example.app/DEInfiniteTileMarqueeView Example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DEInfiniteTileMarqueeView Example/DEInfiniteTileMarqueeView Example-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DEInfiniteTileMarqueeView ExampleTests/DEInfiniteTileMarqueeView ExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3FB6B8C518E4FD0C00F37C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DEInfiniteTileMarqueeView Example.app/DEInfiniteTileMarqueeView Example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DEInfiniteTileMarqueeView Example/DEInfiniteTileMarqueeView Example-Prefix.pch";
+				INFOPLIST_FILE = "DEInfiniteTileMarqueeView ExampleTests/DEInfiniteTileMarqueeView ExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FB6B88F18E4FD0B00F37C92 /* Build configuration list for PBXProject "DEInfiniteTileMarqueeView Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB6B8BE18E4FD0C00F37C92 /* Debug */,
+				3FB6B8BF18E4FD0C00F37C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FB6B8C018E4FD0C00F37C92 /* Build configuration list for PBXNativeTarget "DEInfiniteTileMarqueeView Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB6B8C118E4FD0C00F37C92 /* Debug */,
+				3FB6B8C218E4FD0C00F37C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FB6B8C318E4FD0C00F37C92 /* Build configuration list for PBXNativeTarget "DEInfiniteTileMarqueeView ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB6B8C418E4FD0C00F37C92 /* Debug */,
+				3FB6B8C518E4FD0C00F37C92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FB6B88C18E4FD0B00F37C92 /* Project object */;
+}
