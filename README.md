@@ -7,6 +7,8 @@
 
 `DEInfiniteTileMarqueeView` is a self-contained widget that takes an image, tiles it horizontally, and makes the tiles scroll forever. Great for futuristic UI effects (or a marquee screensaver). Both IB and programmatic friendly.
 
+![Example gif](DEInfiniteTileMarqueeView.gif)
+
 ## How It Works
 
 First, make sure that your marquee view's width is an integer multiple of the tileImage width, otherwise there will be visual looping issues. Also, the marquee view's height should match the image's height.
