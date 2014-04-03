@@ -6,9 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DEMainController">
             <connections>
+                <outlet property="bottomMarquee" destination="j8k-Qr-U0W" id="4ZS-xk-p0r"/>
                 <outlet property="leftMarquee" destination="jyX-g4-Vak" id="iVy-gJ-nN5"/>
                 <outlet property="mainSwitch" destination="Mc5-mc-hpc" id="gXg-vA-xhA"/>
                 <outlet property="rightMarquee" destination="Qa1-2y-ADK" id="9Rl-iC-Se6"/>
+                <outlet property="topMarquee" destination="XYo-bc-Nel" id="bd6-TJ-qnk"/>
                 <outlet property="view" destination="iN0-l3-epB" id="nEZ-7Q-jTe"/>
             </connections>
         </placeholder>
@@ -39,6 +41,14 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XYo-bc-Nel" customClass="DEInfiniteTileMarqueeView">
+                    <rect key="frame" x="150" y="63" width="20" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j8k-Qr-U0W" customClass="DEInfiniteTileMarqueeView">
+                    <rect key="frame" x="150" y="239" width="20" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

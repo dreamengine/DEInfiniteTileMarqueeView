@@ -8,8 +8,11 @@
 #import <Foundation/Foundation.h>
 
 typedef enum DEInfiniteTileMarqueeViewDirection {
+    DEInfiniteTileMarqueeViewDirectionUnset,
     DEInfiniteTileMarqueeViewDirectionLeftToRight,
     DEInfiniteTileMarqueeViewDirectionRightToLeft,
+    DEInfiniteTileMarqueeViewDirectionTopToBottom,
+    DEInfiniteTileMarqueeViewDirectionBottomToTop
 } DEInfiniteTileMarqueeViewDirection;
 
 
