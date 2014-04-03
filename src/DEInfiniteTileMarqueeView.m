@@ -49,28 +49,34 @@
            selector: @selector(applicationDidBecomeActive)
                name: UIApplicationDidBecomeActiveNotification
              object: nil];
-
-    _direction = DEInfiniteTileMarqueeViewDirectionLeftToRight;
+    
     self.tileDuration = 1.0;
     self.currentScrollAnimation = nil;
 
     self.clipsToBounds = YES;
 
-    CGRect frame;
-    frame.origin.x = 0;
-    frame.origin.y = 0;
-    frame.size.width = self.frame.size.width*2;
-    frame.size.height = self.frame.size.height;
-
-    UIView *scrollingView = [[UIView alloc] initWithFrame:frame];
+    UIView *scrollingView = [[UIView alloc] init];
     scrollingView.opaque = NO;
     scrollingView.backgroundColor = [UIColor clearColor];
 
     self.scrollingView = scrollingView;
 
     [self addSubview:self.scrollingView];
+    
+    self.direction = DEInfiniteTileMarqueeViewDirectionLeftToRight;
+}
 
-    [self beginScrollAnimation];
+- (void) setScrollViewFrame {
+    CGRect frame = self.bounds;
+    if(_direction == DEInfiniteTileMarqueeViewDirectionLeftToRight ||
+       _direction == DEInfiniteTileMarqueeViewDirectionRightToLeft) {
+        frame.size.width *= 2;
+    }
+    else
+    {
+        frame.size.height *= 2;
+    }
+    self.scrollingView.frame = frame;
 }
 
 -(void)applicationDidBecomeActive {
@@ -87,7 +93,7 @@
 -(void) setDirection:(DEInfiniteTileMarqueeViewDirection)direction {
     if (_direction != direction) {
         _direction = direction;
-
+        [self setScrollViewFrame];
         [self beginScrollAnimation];        
     }
 }
@@ -116,23 +122,41 @@
 
 -(void) _animateScroll {
     CGRect frame = self.scrollingView.frame;
-
+    
     float fromValue = 0.f;
     float toValue = 0.f;
     if (self.direction == DEInfiniteTileMarqueeViewDirectionLeftToRight) {
         fromValue = -frame.size.width/2;
         toValue = 0.f;
+        frame.origin.x = fromValue;
     }
     else if (self.direction == DEInfiniteTileMarqueeViewDirectionRightToLeft) {
         fromValue = 0.f;
         toValue = -frame.size.width/2;
+        frame.origin.x = fromValue;
+    }
+    else if (self.direction == DEInfiniteTileMarqueeViewDirectionTopToBottom) {
+        fromValue = -frame.size.height/2;
+        toValue = 0.f;
+        frame.origin.y = fromValue;
+    }
+    else {
+        fromValue = 0.f;
+        toValue = -frame.size.height/2;
+        frame.origin.y = fromValue;
     }
 
-    frame = self.scrollingView.frame;
-    frame.origin.x = fromValue;
     self.scrollingView.frame = frame;
     
-    int tileUnits = self.frame.size.width/self.tileImage.size.width;
+    int tileUnits = 0;
+    if(_direction == DEInfiniteTileMarqueeViewDirectionLeftToRight ||
+       _direction == DEInfiniteTileMarqueeViewDirectionRightToLeft) {
+        tileUnits = self.frame.size.width/self.tileImage.size.width;
+    }
+    else
+    {
+        tileUnits = self.frame.size.height/self.tileImage.size.height;
+    }
 
     [UIView animateWithDuration: self.tileDuration*tileUnits
                           delay: 0.f
@@ -140,7 +164,19 @@
                      animations:
      ^{
          CGRect frame = self.scrollingView.frame;
-         frame.origin.x = toValue;
+         if (self.direction == DEInfiniteTileMarqueeViewDirectionLeftToRight) {
+             frame.origin.x = toValue;
+         }
+         else if (self.direction == DEInfiniteTileMarqueeViewDirectionRightToLeft) {
+             frame.origin.x = toValue;
+         }
+         else if (self.direction == DEInfiniteTileMarqueeViewDirectionTopToBottom) {
+             frame.origin.y = toValue;
+         }
+         else {
+             frame.origin.y = toValue;
+         }
+         
          self.scrollingView.frame = frame;
      }
                      completion:
