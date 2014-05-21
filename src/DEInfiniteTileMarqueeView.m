@@ -83,6 +83,11 @@
     [self beginScrollAnimation];
 }
 
+- (void) layoutSubviews {
+    [super layoutSubviews];
+    [self beginScrollAnimation];
+}
+
 -(void) setTileImage:(UIImage *)tileImage {
     if (![_tileImage isEqual:tileImage]) {
         _tileImage = tileImage;
